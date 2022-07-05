@@ -1,4 +1,4 @@
-# LaTeX Template for Project Report
+# English LaTeX Template for Project Report
 
 ## How to import
 
@@ -12,10 +12,10 @@ Alternatively, you can also install tex locally on your computer:
 
 ## Getting started
 
-Before writing your report please add your personal information to the project. You can do this by editing the respective fields in `projektarbeit.tex`:
+Before writing your report please add your personal information to the project. You can do this by editing the respective fields in `projectwork.tex`:
 - Your name/immatriculation number
 - Title
-- Language if you want to write in English: `ngerman` -> `english`
+- Language is set to English by default
 
 Finally, you are ready to add some content :smiley:
 
