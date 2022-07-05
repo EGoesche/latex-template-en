@@ -1,0 +1,51 @@
+% LaTeX Template Medical Engineering Project Work
+% Alexander Ruppel
+% changed by Eva Eibenberger 
+% changed by Stephan Seitz
+% translated by Erik Gösche
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Please change the title of the project work, add your name 
+% and matriculation number and set the language of your project 
+% report 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[%
+	a4paper, %
+	12pt, %
+	english, % 
+	bibtotoc %
+]{scrartcl}
+
+% Group: Number of the project work
+
+% Topic of the project work
+\newcommand{\headline}{Title of the work}
+
+% Student name and matriculation number 
+\newcommand{\first}{Peter Pan}      	% Student 1: First name Last name
+\newcommand{\mnrfirst}{12345678}		% Student 1: Matriculation number
+
+% set in header language!
+\input{header}
+
+\begin{document}
+
+\input{cover}
+
+% Toc
+\tableofcontents
+\newpage
+
+% Files containing the text
+\input{Chapter/introduction}
+
+\input{Chapter/main}
+
+\input{Chapter/conclusion}
+
+% Bibliography
+\newpage
+\bibliographystyle{apalike}
+\bibliography{Bib/literature}
+
+\end{document}

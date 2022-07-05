@@ -1,40 +1,41 @@
-% LaTeX-Vorlage Medizintechnik Projektarbeit
-% Wintersemster 2009/10
+% LaTeX Template Medical Engineering Project Work
+% Winter semster 2009/10
 % Alexander Ruppel
-% veraendert von Eva Eibenberger 
+% changed by Eva Eibenberger 
+% translated by Erik Gösche
 
-%% Seitenraender
+%% Margins
 \usepackage[head=12.5mm,headsep=12mm,left=25mm,right=25mm,top=28mm,bottom=20mm]{geometry} 
 
-%% Absatzeinstellungen
-\setlength{\parindent}{0em} % Einrueckung neuer Absaetze
+%% Paragraph settings
+\setlength{\parindent}{0em} % Indentation of new paragraphs
 
-%% Kopf- und Fusszeilen
+%% Headers and footers
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadings{} %
 \clearscrplain{}	  %
-\clearscrheadfoot{} % Kopf- und Fuzeilen werden geloescht
+\clearscrheadfoot{} % Header and footer lines will be deleted
 \renewcommand{\headfont}{\normalfont\small}
-\ihead{\titel{}}
+\ihead{\headline{}}
 \ohead{\pagemark}
 
-%% Zeichenkodierung
+%% Character encoding
 \usepackage[utf8]{inputenc}
 \usepackage{babel,fixltx2e}
 \usepackage[T1]{fontenc}
 
 \usepackage[babel]{csquotes}
-%% Literaturverzeichnis
+%% Bibliography
 %\usepackage[square,authoryear]{natbib}
 %\renewcommand{\cite}{\citep}
 
-%% Schriftart
+%% Font
 \usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault} % Standardschrift auf sf setzen
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sf
 \usepackage{textcomp}
 
-%% Tabellen
+%% Tables
 \usepackage{tabularx}
 \usepackage{multirow,multicol}
 
@@ -42,41 +43,41 @@
 \usepackage[margin=2em,format=plain,indention=.8em,labelsep=quad,font=small,labelfont=bf,textfont=it]{caption}
 \usepackage{breakcites}
 
-%% Mathe & Co
+%% Maths & Co
 \usepackage{amsmath,amssymb,amsfonts}
 
-%% Grafiken
+%% Figures
 \usepackage{graphicx}
-\graphicspath{{Grafiken/}}
+\graphicspath{{Figures/}}
 \usepackage{wrapfig}
 
-%% PDF-Optionen
+%% PDF-Options
 \usepackage[
     bookmarks,
     bookmarksopen=true,
     colorlinks=true,
-% diese Farbdefinitionen zeichnen Links im PDF farblich aus
-    %linkcolor=red, % einfache interne Verknpfungen
-    %anchorcolor=black,% Ankertext
-    %citecolor=blue, % Verweise auf Literaturverzeichniseintrge im Text
-    %filecolor=magenta, % Verknpfungen, die lokale Dateien ffnen
-    %menucolor=red, % Acrobat-Menpunkte
+% these colour definitions colour links in the PDF
+    %linkcolor=red, % Simple internal links
+    %anchorcolor=black,% Anchor text
+    %citecolor=blue, % References to bibliography entries in the text
+    %filecolor=magenta, % Links that open local files
+    %menucolor=red, % Acrobat menu items
     %urlcolor=cyan, 
-% diese Farbdefinitionen sollten fr den Druck verwendet werden (alles schwarz)
-    linkcolor=black, % einfache interne Verknpfungen
-    anchorcolor=black, % Ankertext
-    citecolor=black, % Verweise auf Literaturverzeichniseintrge im Text
-    filecolor=black, % Verknpfungen, die lokale Dateien ffnen
-    menucolor=black, % Acrobat-Menpunkte
+% these colour definitions should be used for printing (all black)
+    linkcolor=black, % Simple internal links
+    anchorcolor=black, % Anchor text
+    citecolor=black, % References to bibliography entries in the text
+    filecolor=black, % Links that open local files
+    menucolor=black, % Acrobat menu items
     urlcolor=black, 
-    backref, % zurückverweise im Inhaltsverzeichnis auf die Seite
-    plainpages=false, % zur korrekten Erstellung der Bookmarks
-    pdfpagelabels, % zur korrekten Erstellung der Bookmarks
-    hypertexnames=false, % zur korrekten Erstellung der Bookmarks
-    linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+    backref, % backlinks in the table of contents to the page
+    plainpages=false, % for the correct creation of the bookmarks
+    pdfpagelabels, % for the correct creation of the bookmarks
+    hypertexnames=false, % for the correct creation of the bookmarks
+    linktocpage % Link page numbers instead of text in the table of contents
 ]{hyperref}
 
-%% Diverses
+%% Miscellaneous
 \usepackage{nameref}
 \usepackage{blindtext}
 \usepackage{ifthen}
